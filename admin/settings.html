@@ -9,13 +9,13 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>STARSconnect Home</title>
+    <title>STARSconnect Admin</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="bootstrap/css/navbar.css" rel="stylesheet">
+    <link href="../bootstrap/css/navbar.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -42,13 +42,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand">STARSconnect</a>
+            <a class="navbar-brand">STARSconnect Admin</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="meetingHistory.html">Meeting History</a></li>
-              <li><a href="settings.html">Settings</a></li>
+              <li><a href="viewReports.html">Home</a></li>
+              <li><a href="manageUsers.html">Manage Users</a></li>
+              <li class="active"><a href="#">Settings</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
 			<li><a>Username</a></li>
@@ -60,16 +60,18 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <form class="form-signin">
-        <h2 class="form-signin-heading">Add new Mentor Meeting</h2>
-        <label for="date" class="sr-only">Meeting Date</label>
-        <input type="date" id="date" class="form-control" placeholder="Meeting Date" required autofocus>
-        <label for="hours" class="sr-only">Meeting Length (Hours)</label>
-        <input type="number" min="0" step=".25" id="hours" class="form-control" placeholder="Meeting Length (Hours)" required>
-		<label for="activity" class="sr-only">Meeting Activity</label>
-        <textarea class="form-control" rows="5" id="activity" placeholder="Meeting Activity"></textarea>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+	  
+    <form class="form-signin">
+        <h2 class="form-signin-heading">Change Password</h2>
+		<label for="inputPassword" class="sr-only">Current Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Current Password" required autofocus>
+        <label for="inputPassword" class="sr-only">New Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="New Password" required>
+        <label for="confirmPassword" class="sr-only">Confirm New Password</label>
+        <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm New Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Change Password</button>
       </form>
+  
       </div>
 
     </div> <!-- /container -->
