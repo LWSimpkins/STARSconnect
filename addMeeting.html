@@ -47,10 +47,11 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Meeting History</a></li>
-              <li><a href="#">Settings</a></li>
+              <li><a href="meetingHistory.html">Meeting History</a></li>
+              <li><a href="settings.html">Settings</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+			<li><a>Username</a></li>
               <li class="active"><a href="index.html">Log Out<span class="sr-only">(current)</span></a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -64,7 +65,7 @@
         <label for="date" class="sr-only">Meeting Date</label>
         <input type="date" id="date" class="form-control" placeholder="Meeting Date" required autofocus>
         <label for="hours" class="sr-only">Meeting Length (Hours)</label>
-        <input type="number" id="hours" class="form-control" placeholder="Meeting Length (Hours)" required>
+        <input type="number" min="0" step=".25" id="hours" class="form-control" placeholder="Meeting Length (Hours)" required>
 		<label for="activity" class="sr-only">Meeting Activity</label>
         <textarea class="form-control" rows="5" id="activity" placeholder="Meeting Activity"></textarea>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
